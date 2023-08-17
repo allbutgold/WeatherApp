@@ -1,0 +1,119 @@
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: raleway;
+  src: url(../fonts/Raleway/static/Raleway-Black.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(66, 119, 121);
+  color: black;
+  header {
+    font-family: roboto;
+    top: 0;
+    position: sticky;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    a {
+      text-decoration: none;
+      color: azure;
+    }
+    form {
+      margin: 0 0 0 60px;
+      input {
+        width: 200px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        padding: 10px;
+        background-color: aliceblue;
+        font-family: roboto;
+      }
+      button {
+        margin: 0 5px;
+        font-family: roboto;
+        height: 30px;
+        width: 80px;
+        padding: 0 7px 0 7px;
+        border-radius: 20px;
+        border: none;
+        background-color: rgb(147, 18, 147);
+        color: aliceblue;
+        &:hover {
+          background-color: rgb(66, 119, 121);
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    #forecastContainer {
+      // background-color: rgba(240, 248, 255, 0.603);
+      margin: 100px auto;
+      border-radius: 10px;
+      width: 400px;
+      height: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      font-family: roboto;
+      background-position: center;
+      background-size: cover;
+
+      &.thunderstorm {
+        background-image: url(../img/johannes-plenio-ESL1rIs9j48-unsplash.jpg);
+        opacity: 0.6;
+      }
+      &.drizzle {
+        background-image: url(../img/anant-chandra-kiZiXe8xueo-unsplash.jpg);
+        opacity: 0.6;
+      }
+
+      &.rain {
+        background-image: url(../img/eutah-mizushima-F-t5EpfQNpk-unsplash.jpg);
+        opacity: 0.6;
+      }
+
+      &.snow {
+        background-image: url(../img/jonathan-knepper--lWKt2RKz50-unsplash.jpg);
+        opacity: 0.6;
+      }
+
+      &.atmosphere {
+        background-image: url(../img/billy-huynh-v9bnfMCyKbg-unsplash.jpg);
+        opacity: 0.6;
+      }
+
+      &.clear-sky {
+        opacity: 0.6;
+        background-image: url(../img/cate-bligh-lX5wMeZUidA-unsplash.jpg);
+      }
+
+      &.clouds {
+        background-image: url(../img/billy-huynh-v9bnfMCyKbg-unsplash.jpg);
+        opacity: 0.6;
+      }
+      h2 {
+        color: black;
+      }
+    }
+  }
+}

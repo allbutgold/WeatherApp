@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../newsAPI/assets/fonts"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "WeatherApp"
+  }
+}
